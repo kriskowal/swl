@@ -112,6 +112,7 @@ To see the various ways to you can format your code, refer
 to the tag reference.
 
 Nested Tags
+-----------
 
 By nesting tags, you can create outlines, break out rows in
 tables, and much more.  Here's the general idea:
@@ -145,6 +146,7 @@ So, this also works.
 	/>
 
 Links and Images
+----------------
 
 By simply enclosing links or image file URL's in spaced
 angle-brackets, you can automatically create full image or
@@ -194,4 +196,23 @@ forcibly recompile your site with the command "<tt>swl -f
 .</tt>".
 
 	=.email-mangle>yes
+
+Tags
+----
+
+* `1-6` headers
+* `*` bulleted list
+* `#` numbered list
+* `t` table
+* `-` horizontal rule
+* `p` paragraphs (default)
+* `P` stanza (single paragraph with line breaks)
+* `j` anchor
+* `o` outline
+* `"` pre
+* `+` include
+* `^.tag` macro
+* `=.name` variable assignment
+* `c.year.month.day` calendar
+* `!` comment
 
