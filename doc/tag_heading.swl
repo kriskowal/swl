@@ -1,0 +1,20 @@
+
+1>Heading Tags
+
+"><i>heading number</i>&gt;
+
+There are 6 heading levels.  Just plunk the heading number on a line and put a hat on it.  The tag works pretty well in the multi-line format as well.
+
+1>Heading 1
+is the largest, whereas
+6>Heading 6
+is the smallest.
+
+
+3>Note:
+If you want a numbered < tag_list.html list >, use the '#'.
+
+
+->>
+
+< tag_heading.swl >

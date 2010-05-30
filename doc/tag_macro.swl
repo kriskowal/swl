@@ -1,0 +1,45 @@
+1>Macro Define Tag
+
+">^&gt;
+
+2>Macro Properties
+*>
+	top
+	left
+	tab
+	colon
+	right
+	bottom
+
+	single-top
+	single-left
+	single-tab
+	single-colon
+	single-right
+	single-bottom
+
+	multi-top
+	multi-left
+	multi-tab
+	multi-colon
+	multi-right
+	multi-bottom
+
+	multi-first-left
+	multi-first-tab
+	multi-first-colon
+	multi-first-right
+	multi-left-first
+	multi-tab-first
+	multi-colon-first
+	multi-right-first
+	first-left
+	first-tab
+	first-colon
+	first-right
+
+	noindent
+	nocontent
+/>
+
+< tag_macro.swl > | < local.swlt >

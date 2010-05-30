@@ -1,0 +1,9 @@
+1>Multiple Paragraphs Tag
+
+">p&gt;
+
+This is the default tag.  It interprets each line as a paragraph.
+
+->>
+
+< tag_paragraphs.swl >

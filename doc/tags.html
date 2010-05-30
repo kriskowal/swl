@@ -1,0 +1,636 @@
+<html>
+<!-- by SWL 2.10 Thu Sep 15 20:46:34 2005 -->
+<head>
+	<title>SWL Document</title>
+	<meta http-equiv=Expires content=0>
+	<style>
+		body
+		{
+			font-family: Verdana,Helvetica,Arial,Sans Serif;
+			font-size: 15px;
+			color: #000000;
+		}
+		p, tr, thred, tfoot, th, td, dl, ol, ul, blockquote, span, br
+		{
+			font-size: 15px;
+		}
+	</style>
+</head>
+<body>
+	<table border=0 cellspacing=0 cellpadding=0 width=700></tr><td>
+		<h1>
+	SWL Builtin Tag Reference
+</h1>
+
+<p><table border="1" cellpadding="4" cellspacing="0" width="100%">
+	<tr>
+		<th>
+			tag
+		</th>
+		<th>
+			html
+		</th>
+		<th colspan=3>
+			description
+		</th>
+	</tr>
+	<tr>
+		<td>
+			:
+		</td>
+		<td>
+			html
+		</td>
+		<td>
+			just plain html
+		</td>
+		<td colspan=2>
+			<a href="tag_revert.html">goto</a>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			p
+		</td>
+		<td>
+			p
+		</td>
+		<td>
+			multiple paragraphs
+		</td>
+		<td colspan=2>
+			<a href="tag_paragraphs.html">goto</a>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			P
+		</td>
+		<td>
+			p br
+		</td>
+		<td>
+			single paragraph, delimiting each space with a br
+		</td>
+		<td colspan=2>
+			<a href="tag_paragraph.html">goto</a>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			j
+		</td>
+		<td>
+			a name
+		</td>
+		<td>
+			anchor
+		</td>
+		<td colspan=2>
+			<a href="tag_anchor.html">goto</a>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			"
+		</td>
+		<td>
+			pre
+		</td>
+		<td>
+			pre-formatted text
+		</td>
+		<td colspan=2>
+			<a href="tag_pre.html">goto</a>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			-
+		</td>
+		<td>
+			hr
+		</td>
+		<td>
+			horizontal rule
+		</td>
+		<td colspan=2>
+			<a href="tag_rule.html">goto</a>
+		</td>
+	</tr>
+	<tr>
+		<th colspan=5>
+			Headings
+		</th>
+	</tr>
+	<tr>
+		<td>
+			1
+		</td>
+		<td>
+			h1
+		</td>
+		<td>
+			heading level 1
+		</td>
+		<td colspan=2>
+			<a href="tag_heading.html">goto</a>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			2
+		</td>
+		<td>
+			h2
+		</td>
+		<td colspan=3>
+			heading level 2
+		</td>
+	</tr>
+	<tr>
+		<td>
+			3
+		</td>
+		<td>
+			h3
+		</td>
+		<td colspan=3>
+			heading level 3
+		</td>
+	</tr>
+	<tr>
+		<td>
+			4
+		</td>
+		<td>
+			h4
+		</td>
+		<td colspan=3>
+			heading level 4
+		</td>
+	</tr>
+	<tr>
+		<td>
+			5
+		</td>
+		<td>
+			h5
+		</td>
+		<td colspan=3>
+			heading level 5
+		</td>
+	</tr>
+	<tr>
+		<td>
+			6
+		</td>
+		<td>
+			h6
+		</td>
+		<td colspan=3>
+			heading level 6
+		</td>
+	</tr>
+	<tr>
+		<th colspan=5>
+			Lists
+		</th>
+	</tr>
+	<tr>
+		<td>
+			*
+		</td>
+		<td>
+			ul
+		</td>
+		<td>
+			bulleted list
+		</td>
+		<td colspan=2>
+			<a href="tag_list.html">goto</a>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			#
+		</td>
+		<td>
+			ol type=1
+		</td>
+		<td colspan=3>
+			numbered list
+		</td>
+	</tr>
+	<tr>
+		<td>
+			a
+		</td>
+		<td>
+			ol type=a
+		</td>
+		<td colspan=3>
+			ordered list starting with 'a'
+		</td>
+	</tr>
+	<tr>
+		<td>
+			A
+		</td>
+		<td>
+			ol type=A
+		</td>
+		<td colspan=3>
+			ordered list starting with 'A'
+		</td>
+	</tr>
+	<tr>
+		<td>
+			i
+		</td>
+		<td>
+			ol type=i
+		</td>
+		<td colspan=3>
+			ordered list starting with 'i'
+		</td>
+	</tr>
+	<tr>
+		<td>
+			I
+		</td>
+		<td>
+			ol type=I
+		</td>
+		<td colspan=3>
+			ordered list starting with 'I'
+		</td>
+	</tr>
+	<tr>
+		<td>
+			o
+		</td>
+		<td>
+			ol ul
+		</td>
+		<td>
+			ouline
+		</td>
+		<td colspan=2>
+			<a href="tag_outline.html">goto</a>
+		</td>
+	</tr>
+	<tr>
+		<th colspan=5>
+			Link Lists
+		</th>
+	</tr>
+	<tr>
+		<td>
+			l
+		</td>
+		<td>
+			ul a
+		</td>
+		<td>
+			bulleted list of links
+		</td>
+		<td colspan=2>
+			<a href="tag_list.html">goto</a>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			*l
+		</td>
+		<td>
+			ul a
+		</td>
+		<td colspan=3>
+			bulleted list of links
+		</td>
+	</tr>
+	<tr>
+		<td>
+			#l
+		</td>
+		<td>
+			ol type=1 a
+		</td>
+		<td colspan=3>
+			numbered list of links
+		</td>
+	</tr>
+	<tr>
+		<td>
+			al
+		</td>
+		<td>
+			ol type=a a
+		</td>
+		<td colspan=3>
+			ordered list of links starting with 'a'
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Al
+		</td>
+		<td>
+			ol type=A a
+		</td>
+		<td colspan=3>
+			ordered list of links starting with 'A'
+		</td>
+	</tr>
+	<tr>
+		<td>
+			il
+		</td>
+		<td>
+			ol type=i a
+		</td>
+		<td colspan=3>
+			ordered list of links starting with 'i'
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Il
+		</td>
+		<td>
+			ol type=I a
+		</td>
+		<td colspan=3>
+			ordered list of links starting with 'I'
+		</td>
+	</tr>
+	<tr>
+		<td>
+			ol
+		</td>
+		<td>
+			ol ul a
+		</td>
+		<td>
+			outline of links
+		</td>
+		<td colspan=2>
+			<a href="tag_outline.html">goto</a>
+		</td>
+	</tr>
+	<tr>
+		<th colspan=5>
+			Tables
+		</th>
+	</tr>
+	<tr>
+		<td>
+			t
+		</td>
+		<td>
+			table
+		</td>
+		<td>
+			table (lines=rows) (columns=tab delimited)
+		</td>
+		<td colspan=2>
+			<a href="tag_table.html">goto</a>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			t.h
+		</td>
+		<td>
+			tr th
+		</td>
+		<td colspan=3>
+			rows of header cells in a table (lines=row) (columns=tab delimited)
+		</td>
+	</tr>
+	<tr>
+		<td>
+			t.r
+		</td>
+		<td>
+			tr td
+		</td>
+		<td colspan=3>
+			row of normal cells in a table (lines=cells)
+		</td>
+	</tr>
+	<tr>
+		<td>
+			t.rh
+		</td>
+		<td>
+			tr th
+		</td>
+		<td colspan=3>
+			row of header cells (line delimited)
+		</td>
+	</tr>
+	<tr>
+		<td>
+			t.r.c
+		</td>
+		<td>
+			td
+		</td>
+		<td colspan=3>
+			lines of a normal cell in a row of a table
+		</td>
+	</tr>
+	<tr>
+		<td>
+			t.r.ch
+		</td>
+		<td>
+			th
+		</td>
+		<td colspan=3>
+			lines of a header cell in a normal row of a table
+		</td>
+	</tr>
+	<tr>
+		<td>
+			t.r.h
+		</td>
+		<td>
+			tr th
+		</td>
+		<td colspan=3>
+			lines of a header cell in a normal row of a table
+		</td>
+	</tr>
+	<tr>
+		<td>
+			t.rh.c
+		</td>
+		<td>
+			td
+		</td>
+		<td colspan=3>
+			lines of a normal cell in a header row of a table
+		</td>
+	</tr>
+	<tr>
+		<td>
+			t.rh.ch
+		</td>
+		<td>
+			th
+		</td>
+		<td colspan=3>
+			lines of a header cell in a header row of a table
+		</td>
+	</tr>
+	<tr>
+		<th colspan=5>
+			Calendar
+		</th>
+	</tr>
+	<tr>
+		<td>
+			C
+		</td>
+		<td>
+			table
+		</td>
+		<td>
+			creates a calendar in table form for the specified dates
+		</td>
+		<td colspan=2>
+			<a href="tag_calendar.html">goto</a>
+		</td>
+	</tr>
+	<tr>
+		<th colspan=5>
+			Comments
+		</th>
+	</tr>
+	<tr>
+		<td>
+			!
+		</td>
+		<td>
+			!--
+		</td>
+		<td>
+			comment
+		</td>
+		<td colspan=2>
+			<a href="tag_comment.html">goto</a>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			!.#
+		</td>
+		<td>
+			!--
+		</td>
+		<td colspan=3>
+			numbered list in a comment
+		</td>
+	</tr>
+	<tr>
+		<td>
+			!.*
+		</td>
+		<td>
+			!--
+		</td>
+		<td colspan=3>
+			bulleted list in a comment
+		</td>
+	</tr>
+	<tr>
+		<td>
+			!.A
+		</td>
+		<td>
+			!--
+		</td>
+		<td colspan=3>
+			ordered list in a comment starting with 'A'
+		</td>
+	</tr>
+	<tr>
+		<td>
+			!.a
+		</td>
+		<td>
+			!--
+		</td>
+		<td colspan=3>
+			ordered list in a comment starting with 'a'
+		</td>
+	</tr>
+	<tr>
+		<th colspan=5>
+			Manipulators
+		</th>
+	</tr>
+	<tr>
+		<td>
+			@
+		</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			variables
+		</td>
+		<td colspan=2>
+			<a href="tag_variable.html">goto</a>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			^
+		</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			macro definition
+		</td>
+		<td colspan=2>
+			<a href="tag_macro.html">goto</a>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			=
+		</td>
+		<td>
+			swl
+		</td>
+		<td>
+			template replacement
+		</td>
+		<td colspan=2>
+			<a href="tag_template.html">goto</a>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			+
+		</td>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			file include
+		</td>
+		<td colspan=2>
+			<a href="tag_include.html">goto</a>
+		</td>
+	</tr>
+</table></p>
+<p><a href="tags.swl">tags.swl</a></p>
+	</td></tr></table>
+</body>
+</html>

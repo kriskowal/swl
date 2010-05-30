@@ -1,0 +1,14 @@
+1>Anchor Tag
+
+">j</i>&gt;<i>anchor_name
+
+An anchor in HTML is what you would call a bookmark anywhere else.  To create a link to an anchor in SWL, simply place this tag anywhere in your code:
+
+">&lt; #<i>anchor_name</i> "<i>label</i>" &gt;
+
+3>Mnemonic
+'j' was chosen to represent the anchor tag because the letter somewhat resembles a boat anchor.  Bookmarks passing in the night, per se.
+
+->>
+
+< tag_anchor.swl >

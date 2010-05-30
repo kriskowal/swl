@@ -1,0 +1,49 @@
+1>Template Variable Define Tag
+">=&gt;
+
+The template variable define tag allows you to set 'variables' whose values will be pasted into your docuement's template.  <i>(More on creating your own template later)</i>
+
+3>Example:
+">
+	=.author&gt;<i>your_name</i>
+/>
+
+To place a template value in your document, you use the pseudo-HTML tag, '<i>&lt;swl&gt;</i>'
+
+3>Example:
+">
+	&lt;swl author&gt;
+/>
+yields: <i>your_name</i>.
+
+
+2>Builtin Templates
+The SWL compiler automatically sets these templates so that you can insert them into your document:
+t>
+	date	date of compilation
+	author	the default author is "SWL <i>version</i>"
+	body	if you define a 'template' variable, the content of your document will be dumped into the 'body' template so you can place it wherever you want it.
+/>
+
+
+->>
+
+
+2><i>about.swlt</i> Templates
+If you put the line '<i>+&gt;about</i>' on the top of your document, these template variables are set:
+*>
+	swl.author
+	swl.version
+	swl.release date
+	swl.copyright
+	swl.license
+/>
+
+
+Note that when you compile a SWL document, SWL tries to find <i>local.swlt</i> in the same directory as your source code or one of the parent directories.  Thusly, you can port generic SWL files from one site to another, recompile, and completely change the look of your pages.
+
+
+->>
+
+
+< tag_template.swl > | < local.swlt >

@@ -1,0 +1,129 @@
+
+1>SWL Syntax
+
+SWL is like HTML in that HTML tags can be put into a SWL document and will be preserved.  Unline HTML, SWL is in-line.  That is, in HTML, you can have a paragraph spanning multiple lines in your code.  In SWL, each line of code is assumed to be a unique, self-contained paragraph.  Using 'tags' at the beginning of a line, you can specify different formatting behavior for an individual line of code or a range of lines, using the following syntacies.
+
+3>Single Line of 'Tag' Formatting
+
+">tag&gt;single line of content
+
+3>Multiple Lines on which 'Tag' will operate.
+">
+	tag&gt;
+		content lines
+		content lines
+	/&gt;
+/>
+
+To see the various ways to you can format your code, refer to the < tags.html "tag reference" >.
+
+
+->>
+
+
+1>Nested Tags
+
+By nesting tags, you can create outlines, break out rows in tables, and much more.  Here's the general idea:
+
+Through SWL's system of tag nesting, all of the following syntacies are functionally the same:
+
+">
+	a&gt;
+		b&gt;
+			content
+		/&gt;
+	/&gt;
+/>
+
+">
+	a&gt;
+		b&gt;content
+	/&gt;
+/>
+
+">
+	a.b&gt;content
+/>
+
+Note that there are 2 closing tags nested in this example.
+
+">
+	a.b&gt;
+		content
+	/./&gt;
+/>
+
+So, this also works.
+
+">
+	a.b&gt;
+			content
+		/&gt;
+	/&gt;
+/>
+
+
+->>
+
+
+1>Links and Images
+
+By simply enclosing links or image file URL's in spaced angle-brackets, you can automatically create full image or anchor tags without the syntax hastle.  These tags can be placed anywhere in your code, not constrained to the beginning of the line.
+<b>Note:</b> the space after the opening &lt; is required.  SWL will assume that any URL's containing the <i>@</i> (at) symbol are email links.  Images must end with <i>.gif</i>, <i>.jpg</i>, <i>.jpeg</i>, <i>.svg</i> or <i>.png</i>.  I have ambitions of adding support for other media extentions.
+
+">
+	&lt; link link_text &gt;
+	&lt; image alternate_text properties &gt;
+	&lt; "link with spaces" "link text with spaces" &gt;
+	&lt; "image file name" "alternate text" "properties with spaces" &gt;
+/>
+
+
+2>Examples
+
+3>Links:
+">
+	&lt; foo.html Foo &gt;
+	&lt; bar.html "The Bar" &gt;
+	&lt; "foo bar.html" foobar &gt;
+	
+	&lt; foo@bar.com &gt;
+	&lt; foo@bar.com Foo &gt;
+	&lt; foo@bar.com "Email Foo" &gt;
+/>
+
+
+3>Images:
+">
+	&lt; bob.gif &gt;
+	&lt; bob.jpg &gt;
+	&lt; bob.jpeg &gt;
+	
+	&lt; bob.jpg "A picture of Bob" &gt;
+	&lt; bob.jpg Bob &gt;
+	&lt; bob.jpg "A picture of Bob" align=center &gt;
+	&lt; bob.jpg "A picture of Bob" "align=center hspace=20 vspace=20" &gt;
+	
+/>
+
+
+3> Your Web Root
+
+SWL makes your website portable.  You can specify in a single location where your entire document tree lies on the web.  This allows SWL to manage all of your links when you move your site.  All you have to do is change the <tt>root</tt> variable and forcibly recompile your entire site (which is only one command).
+
+To use this feature, specify your web root in your template (usually <tt>local.swlt</tt> or <tt>@.swlt</tt> in your document root) and use <tt>~/</tt> in all of your links to specify that your link is relative to your web root.  For example:
+
+">
+	=.root&gt;//cixar.com/~swilly
+	&lt; ~/index.html "Swilly's Homepage" &gt;
+/>
+
+
+3> Mangle Your Email Addresses
+SWL can mangle your site's email addresses to reduce the risk of web crawlers harvesting your email for unsolicited email, SPAM.  To activate this feature, specify the <tt>email-mangle</tt> variable in your site template and forcibly recompile your site with the command "<tt>swl -f .</tt>".
+
+">
+	=.email-mangle&gt;yes
+/>
+
+< syntax.swl >

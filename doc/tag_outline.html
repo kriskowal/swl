@@ -1,0 +1,108 @@
+<html>
+<!-- by SWL 2.10 Thu Sep 15 20:46:30 2005 -->
+<head>
+	<title>SWL Document</title>
+	<meta http-equiv=Expires content=0>
+	<style>
+		body
+		{
+			font-family: Verdana,Helvetica,Arial,Sans Serif;
+			font-size: 15px;
+			color: #000000;
+		}
+		p, tr, thred, tfoot, th, td, dl, ol, ul, blockquote, span, br
+		{
+			font-size: 15px;
+		}
+	</style>
+</head>
+<body>
+	<table border=0 cellspacing=0 cellpadding=0 width=700></tr><td>
+		<h1>
+	Outline Tag
+</h1>
+
+<pre>o&gt;</pre>
+<p>The outline tag allows you to create large quatities of nested items simply by using tabs to differentiate the different heading levels.</p>
+
+
+<h3>
+	Example:
+</h3>
+
+<pre>
+o&gt;
+	item
+		sub-item
+		sub-item
+		sub-item
+	another item
+		sub-item
+		sub-item
+			another child
+				way out here
+		sub-item
+		sub-item
+/&gt;</pre>
+<p>yields:</p>
+
+<ol type=I>
+	<li>item</li>
+	<ol type=A>
+		<li>sub-item</li>
+		<li>sub-item</li>
+		<li>sub-item</li>
+	</ol>
+	<li>another item</li>
+	<ol type=A>
+		<li>sub-item</li>
+		<li>sub-item</li>
+		<ol type=1>
+			<li>another child</li>
+			<ol type=i>
+				<li>way out here</li>
+			</ol>
+		</ol>
+		<li>sub-item</li>
+		<li>sub-item</li>
+	</ol>
+</ol>
+
+
+<hr>
+
+
+<h1>
+	Outline of Links Tag
+</h1>
+
+<pre>ol&gt;</pre>
+<p>Much like a list of links, you can have an outline of links.  This is useful when you want to create a Table of Contents.</p>
+
+
+<h3>
+	Example:
+</h3>
+
+<a name=here></a>
+
+<pre>
+ol&gt;
+	tag_outline.html#here
+		tag_outline.html#here	You can put a label after a tab.
+/&gt;</pre>
+<p>yields:</p>
+
+<ol type=I>
+	<li><a href="tag_outline.html#here">tag_outline.html#here</a></li>
+	<ol type=A>
+		<li><a href="tag_outline.html#here">You can put a label after a tab.</a></li>
+	</ol>
+</ol>
+
+
+<hr>
+<p><a href="tag_outline.swl">tag_outline.swl</a></p>
+	</td></tr></table>
+</body>
+</html>

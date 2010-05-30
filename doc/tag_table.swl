@@ -1,0 +1,310 @@
+1>Table Tags
+
+">t&gt;
+
+
+The table tag allows you to create concise tables with any degree of particularity.
+Following are samples of table code an the results they yield.  You will probably only find use for the first two though the remaining are available just in case you need more functionality.
+
+
+->>
+
+
+2>t
+
+The simplest table consists of rows and columns where each row is represented by a line and the columns are separated with tabs.
+
+3>Example:
+">
+	t&gt;
+		1,1	1,2	1,3
+		2,1,	2,2	2,3
+	/&gt;
+/>
+yields:
+t>
+	1,1	1,2	1,3
+	2,1,	2,2	2,3
+/>
+
+
+2>Automatic Column Sizing
+
+When swl encounters blank cells, it will automatically increase the 'span' of the cell to their immediate left.
+
+3>Example:
+">
+	t&gt;
+		1,1	1,2	1,3
+		2,1,	   	2,3
+	/&gt;
+/>
+yields:
+t>
+	1,1	1,2	1,3
+	2,1,		2,3
+/>
+
+To get around this feature, place periods in blank cells:
+
+3>Example:
+">
+	t&gt;
+		1,1	1,2	1,3
+		2,1,	.	2,3
+	/&gt;
+/>
+yields:
+t>
+	1,1	1,2	1,3
+	2,1,	.	2,3
+/>
+
+
+->>
+
+
+2>t.h
+
+
+3>Example:
+">
+	t&gt;
+		h&gt;1,1	1,2	1,3
+		2,1,	2,2	2,3
+	/&gt;
+/>
+yields:
+t>
+	h>1,1	1,2	1,3
+	2,1,	2,2	2,3
+/>
+
+
+->>
+
+
+2>t.r
+
+
+3>Example:
+">
+	t&gt;
+		r&gt;
+			1
+			2
+			3
+		/&gt;
+	/&gt;
+/>
+yields:
+t>
+	r>
+		1
+		2
+		3
+	/>
+/>
+
+
+->>
+
+
+2>t.rh
+
+
+3>Example:
+">
+	t&gt;
+		rh&gt;
+			1
+			2
+			3
+		/&gt;
+	/&gt;
+/>
+yields:
+t>
+	rh>
+		1
+		2
+		3
+	/>
+/>
+
+
+->>
+
+
+2>t.r.c
+
+
+3>Example:
+">
+	t.r&gt;
+		1
+		2
+		c&gt;
+			3
+			...
+		/&gt;
+	/./&gt;
+/>
+yields:
+t.r>
+	1
+	2
+	c>
+		3
+		...
+	/>
+/./>
+
+
+->>
+
+
+2>t.r.ch
+
+
+3>Example:
+">
+	t.r&gt;
+		1
+		2
+		ch&gt;
+			3
+			...
+		/&gt;
+	/./&gt;
+/>
+yields:
+t.r>
+	1
+	2
+	ch>
+		3
+		...
+	/>
+/./>
+
+
+->>
+
+
+2>t.r.h
+
+
+3>Example:
+">
+	t.r&gt;
+		1
+		h&gt;
+			2
+			3
+		/&gt;
+		4
+	/./&gt;
+/>
+yields:
+t.r>
+	1
+	h>
+		2
+		3
+	/>
+	4
+/./>
+
+
+->>
+
+
+2>t.rh.c
+
+
+3>Example:
+">
+	t.rh&gt;
+		1
+		c&gt;
+			2
+			...
+		/&gt;
+		3
+	/./&gt;
+/>
+yields:
+t.rh>
+	1
+	c>
+		2
+		...
+	/>
+	3
+/./>
+
+
+->>
+
+
+2>t.rh.ch
+
+
+3>Example:
+">
+	t.rh&gt;
+		1
+		ch&gt;
+			2
+			...
+		/&gt;
+		3
+	/./&gt;
+/>
+yields:
+t.rh>
+	1
+	ch>
+		2
+		...
+	/>
+	3
+/./>
+
+
+->>
+
+
+2>Variables
+
+For information on how to use variables, see the < tag_variable.html "variable tag" > page.
+
+o>
+	table
+		bgcolor
+		background
+		cellpadding
+		cellspacing
+		bordercolor
+		border
+		width
+		height
+		etc.
+	tr/treven/trodd
+		width
+		height
+		etc.
+	td/th
+		bgcolor
+		background
+		align
+		valign
+		width
+		height
+		etc.
+/>
+
+->>
+
+< tag_table.swl >

@@ -1,0 +1,13 @@
+1>Variable Define Tag
+">@&gt;
+
+Example:
+">
+	>@>
+		>&nbsp;table>
+			>bgcolor>000000
+		>/>
+	>/>
+/>
+
+< tag_variable.swl > | < local.swlt >

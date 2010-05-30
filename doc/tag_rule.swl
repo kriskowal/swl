@@ -1,0 +1,23 @@
+1>Horizontal Rule Tag
+
+">-&gt;
+
+The rule tag simply places a horizontal rule on your page.  Any information that happens to be on the same line goes the the bit-bucket.  If you use the multi-line form, all the lines go to the bit-bucket.
+
+3>Clue:
+">-&gt;&gt;
+
+If the remainder of your document disappears after this tag, it's because you forgot the second bracket.  I probably don't need to say that to you wise and learnˆd folk, but in the previous version of SWL (for which there were a total of 3 users: me, my friend, and my imaginary goldfish), the second bracket wasn't necessary so this notation has been an uphill battle for some of us (mostly the goldfish).
+You can really help the aesthetic value of your document by overriding this tag with a graphic that fits in your document's theme.  See < tag_macro.html "macro tags" > for information on overriding.
+
+
+->>
+
+
+2>Mnemonic:
+I realize that it doesn't look <i>that</i> much like a horizontal bar anymore.  It kinduh got burried in more and more brackets as the language generalized.  In fact, it officially looks more like a christmas tree than a divider now.  If that bothers you, just remember <i>National Lampoons' Christmas Vacation</i>.
+
+
+->>
+
+< tag_rule.swl >

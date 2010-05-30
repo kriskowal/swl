@@ -1,0 +1,88 @@
+
++>swl_about
+
+@>
+
+	=>
+
+		title>SWL Documentation
+
+		author>Kris Kowal
+		
+		navigator>
+			>->>
+			< index.html "Index" > |
+			< synopsis.html "Synopsis" > |
+			< syntax.html "Syntax Reference" > |
+			< tags.html "Builtin Tag Reference" >
+		/>
+		
+		template>
+		
+			<html>
+				<!-- by <swl author> with SWL <swl swl.version> <swl date> -->
+				<head>
+					<title><swl title></title>
+					<style>
+						<!--
+					
+						body
+						{
+							font-family: Verdana,Helvetica,Arial,Sans Serif;
+							background-color: #ffffff;
+							scrollbar-base-color: #EF7094;
+						}
+					
+						p, tr, thred, tfoot, th, td, dl, ol, ul, blockquote, span, br
+						{
+							font-size: 15px;
+							color: #000000;
+						}
+
+						a
+						{
+							font-weight: bold;
+							color: #000077;
+						}
+						a:hover
+						{
+							color: #EF7094;
+						}
+						a:active
+						{
+							color: #EF7094;
+						}
+						a:vlink
+						{
+							color:  #000000;
+						}
+						
+			>>			// -->
+					</style>
+				</head>
+				<body>
+					<swl /body>
+					<swl /navigator>
+				</body>
+			</html>
+		/>
+	/>
+	
+	table>
+		border		>1
+		cellspacing	>>0
+		cellpadding	>2
+		bgcolor		>eeeeee
+	/>
+	th>
+		bgcolor		>aaeeff
+	/>
+	calendar>
+		week.bgcolor>bbddee
+		blank.bgcolor>cccccc
+		date.bgcolor>ffcccc
+		event.bgcolor>bbddee
+	/>
+	
+/>
+

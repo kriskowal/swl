@@ -1,0 +1,75 @@
+1>List Tags
+
+t>
+	*&gt;	bulleted list
+	#&gt;	numbered list
+	a&gt;	ordered lists
+	A&gt;	.
+	i&gt;	.
+	I&gt;	.
+/>
+
+These tags produce the various ordered and unordered lists.
+
+3>Example:
+">
+	#&gt;
+		<i>item</i>
+		<i>item</i>
+		<i>item</i>
+	/&gt;
+/>
+yields:
+#>
+	<i>item</i>
+	<i>item</i>
+	<i>item</i>
+/>
+
+2>Mnemonics
+
+You'll notice that most of these lists start with their respective starting character.  Asterisk (<i>*</i>) is close enough to a bullet if you ask me.  Pound (<i>#</i>) marks numbered lists intuitively, but it isn't the first character of the list, like '<i>A</i>' and '<i>i</i>' are.  This is because '<i>1</i>' is used with '<i>1-6</i>' for headings.
+
+<i>see also < tag_outline.html outlines >.</i>
+
+
+->>
+
+
+1>Link List Tags
+
+
+*>
+	l <i>(same as next)</i>
+	*l
+	#l
+	al
+	Al
+	il
+	Il
+/>
+
+If you tack an '<i>l</i>' onto the end of the list tag (or just '<i>l</i>' for bulleted lists), you can create lists of links.  Lines with just a link on them serve as both the reference and the label.  If you want a label that's different than your reference, put a tab after the reference and write the name.  No quotes are necessary.
+
+3>Example:
+">
+	*l&gt;
+		tag_list.html#here
+		tag_list.html#here	Right Here
+	/&gt;
+/>
+j>here
+yields:
+*l>
+	tag_list.html#here
+	tag_list.html#here	Right Here
+/>
+
+
+<i>see also < tag_outline.html outlines >.</i>
+
+
+
+->>
+
+< tag_list.swl >

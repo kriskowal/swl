@@ -1,0 +1,10 @@
+
+1>SWL Synopsis
+
+<b>SWL</b> stands for <u>S</u>hort <u>W</u>eb <u>L</u>anguage.
+
+SWL is an abbreviated subset of HTML designed to expediate document construction.  SWL helps a web designer construct sets of documents with a consistent look and feel, quickly.  Take a moment to read about the < introduction.html#benefits benefits > of SWL if you haven't already.
+
+'SWL' refers to the language itself.  'SWL document' and 'SWL template' refer to source code written in SWL.  'Swl', 'swl', 'SWL compiler', and 'SWL interpreter' refer to any program that converts SWL source into HTML object code, albeit 'swl.pm' and 'swl.pl'.
+
+< synopsis.swl >

@@ -1,0 +1,85 @@
+<html>
+<!-- by SWL 2.10 Thu Sep 15 20:46:27 2005 -->
+<head>
+	<title>SWL Document</title>
+	<meta http-equiv=Expires content=0>
+	<style>
+		body
+		{
+			font-family: Verdana,Helvetica,Arial,Sans Serif;
+			font-size: 15px;
+			color: #000000;
+		}
+		p, tr, thred, tfoot, th, td, dl, ol, ul, blockquote, span, br
+		{
+			font-size: 15px;
+		}
+	</style>
+</head>
+<body>
+	<table border=0 cellspacing=0 cellpadding=0 width=700></tr><td>
+		<h1>
+	Introduction
+</h1>
+<p>When writing web-sites, you typically either write the HTML code or use a 'WYSIWYG' (What You See Is What You Get) editor to make it for you.  Some sites use dynamic content languages, e.g., ASP or PHP, to generate their code for them on the fly.  SWL is an efficient alternative to each of these.</p>
+
+
+<h2>
+	What is SWL?
+</h2>
+<p>SWL is, simply put, abbreviated HTML.  In fact, with a 2 character header, most HTML files can be put directly into a SWL file and compile back to the same HTML they started out as.  <b>But</b>, SWL offers an alternative to writing 'bulk HTML', through the use of 'line-tags'.  A line-tag is a brief ID (usually a single character) followed by a closed angle bracket, '&gt;'.</p>
+<p>Using line-tags, you can reduce:</p>
+
+<pre>
+&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;
+			Cell 1
+		&lt;/td&gt;
+		&lt;td&gt;
+			Cell 2
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;
+			Cell 3
+		&lt;/td&gt;
+		&lt;td&gt;
+			Cell 4
+		&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;</pre>
+<p>To:</p>
+
+<pre>
+t&gt;
+	Cell 1	Cell 2
+	Cell 3	Cell 4
+/&gt;</pre>
+<p>And that is a mere scratch of its <b>power</b>.</p>
+
+<a name=benefits></a>
+
+
+<h2>
+	Benefits
+</h2>
+
+<ul>
+	<li><b>Easy</b> to learn.  <b>Easy</b> to write.  <b>Easy</b> to use.</li>
+	<li><b>Brevity.</b>  SWL code is as short as it gets.  SWL source files (<u><i>without</i></u> file includes) tend to be one half to one third the size of the HTML they generate.</li>
+	<li><b>Brevity.</b>  The HTML that SWL outputs doesn't include unnecessary information.  WYSIWYG editors tend to put lots of junk line breaks and font information.</li>
+	<li><b>Brevity.</b>  Copy a document you want to publish into a text 'SWL' file.  It's almost ready for publication.  Your paragraphs are already set.  To format your headings will take 2 characters each.  To format your tables usually takes the addition of 4 characters.</li>
+	<li><b>No loss in developing potential.</b>  Anything that SWL doesn't recognize won't be changed in your object HTML.</li>
+	<li><b>Plays well with others.</b>  SWL is perfect for use with CSS (Cascading Style Sheets).  A lot of the junk that WYSIWYG editors pump out is for formatting each individual section.  Using a style sheet in your SWL template will automatically make every similar tag look the same, without junk code.  Most document editors (e.g., MS Word, Adobe Pagemaker) already include 'style' information which can be directly interpreted into SWL.  You could even write your PHP in SWL with just a flip of the template.</li>
+	<li><b>Plays well with others.</b>  SWL can import data from plain text, HTML, tab delimited text, and comma separated values (CSV).</li>
+	<li><b>Clean HTML.</b>  The ugliest SWL code outputs to easy-to-read HTML.  SWL indents nested tags and puts white space between major sections.</li>
+	<li><b>Efficiency</b>.  Once you compile your SWL into HTML, it's done.  When you use PHP and ASP to generate your pages, your web server has to start a program to compile it <b>every</b> time someone looks at it on the web.  You only have to compile SWL once.</li>
+	<li><b>Extensibility</b>.  You can make your own 'SWL tags' on the fly in your document.  You can use SWL's internal variables to change the ones it already has.  You can create templates and template modifications on the fly in your SWL documents, or include them from an external SWL library.</li>
+	<li><b>You don't have to be a programmer.</b>  You could teach a monkey to write 'SWL' and they would like it so much that they would forget to eat.</li>
+	<li>Etc.</li>
+</ul>
+<p><a href="introduction.swl">introduction.swl</a></p>
+	</td></tr></table>
+</body>
+</html>

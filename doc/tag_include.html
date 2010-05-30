@@ -1,0 +1,126 @@
+<html>
+<!-- by SWL 2.10 Thu Sep 15 20:46:30 2005 -->
+<head>
+	<title>SWL Document</title>
+	<meta http-equiv=Expires content=0>
+	<style>
+		body
+		{
+			font-family: Verdana,Helvetica,Arial,Sans Serif;
+			font-size: 15px;
+			color: #000000;
+		}
+		p, tr, thred, tfoot, th, td, dl, ol, ul, blockquote, span, br
+		{
+			font-size: 15px;
+		}
+	</style>
+</head>
+<body>
+	<table border=0 cellspacing=0 cellpadding=0 width=700></tr><td>
+		<h1>
+	Include File Tag
+</h1>
+
+<pre>+&gt;</pre>
+<p>The include tag compiles a <i>.swlt</i> SWL template or <i>.swl</i> SWL document into the current file.</p>
+<p>The file extention need not be specified.  Swl will search for the file name first in the local folder, then the SWL library folder, then the absolute directory.  It will try to match your file name with the <i>.swlt</i>, <i>.swl</i>, or <i>.txt</i> in respective order if not specified.</p>
+
+
+<h3>
+	Note:
+</h3>
+<p>Text files are compiled just like SWL files are.  This allows for some nifty tricks:</p>
+
+<pre>".+&gt;<i>file</i></pre>
+<p>...will put the text file into your document under the <a href="tag_pre.html">preformatted</a> tag.</p>
+
+<pre>t.+&gt;<i>file</i></pre>
+<p>...will put a tab-delimitted text file into a table.</p>
+
+
+<h3>
+	Note:
+</h3>
+<p>The nearest <i>local.swlt</i> file up the directory tree is automatically included in all SWL files.</p>
+
+
+<hr>
+
+
+<h2>
+	Include Other Formats
+</h2>
+<p>You can include lines of plain text without SWL compilation or even tables of delimited data using '+' sub-tags.  SWL currently will import the following data formats other than swl:</p>
+
+<p><table border="1" cellpadding="4" cellspacing="0">
+	<tr>
+		<th>
+			sub-tag
+		</th>
+		<th>
+			description
+		</th>
+		<th colspan=2>
+			assumed file extentions (in respective order)
+		</th>
+	</tr>
+	<tr>
+		<td>
+			txt
+		</td>
+		<td>
+			plain text files
+		</td>
+		<td colspan=2>
+			txt
+		</td>
+	</tr>
+	<tr>
+		<td>
+			html
+		</td>
+		<td>
+			html files
+		</td>
+		<td colspan=2>
+			html, htm, txt
+		</td>
+	</tr>
+	<tr>
+		<td>
+			csv
+		</td>
+		<td>
+			comma separated values
+		</td>
+		<td colspan=2>
+			csv, txt
+		</td>
+	</tr>
+	<tr>
+		<td>
+			tab
+		</td>
+		<td>
+			tab delimited values
+		</td>
+		<td colspan=2>
+			tab, txt
+		</td>
+	</tr>
+</table></p>
+
+
+<h3>
+	Example:
+</h3>
+
+<pre>t.+.csv&gt;<i>filename</i></pre>
+
+
+<hr>
+<p><a href="tag_include.swl">tag_include.swl</a></p>
+	</td></tr></table>
+</body>
+</html>

@@ -1,0 +1,22 @@
+1>Pre-formatted Text Tag
+
+">"&gt;
+
+Preserves plain text formatting.
+
+3>Example:
+">
+	"&gt;
+		How Now Brown Cow?
+		Green Eggs and Ham.
+	/&gt;
+/>
+yields:
+">
+	How Now Brown Cow?
+	Green Eggs and Ham.
+/>
+
+->>
+
+< tag_pre.swl >

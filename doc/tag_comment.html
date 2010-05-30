@@ -1,0 +1,99 @@
+<html>
+<!-- by SWL 2.10 Thu Sep 15 20:46:29 2005 -->
+<head>
+	<title>SWL Document</title>
+	<meta http-equiv=Expires content=0>
+	<style>
+		body
+		{
+			font-family: Verdana,Helvetica,Arial,Sans Serif;
+			font-size: 15px;
+			color: #000000;
+		}
+		p, tr, thred, tfoot, th, td, dl, ol, ul, blockquote, span, br
+		{
+			font-size: 15px;
+		}
+	</style>
+</head>
+<body>
+	<table border=0 cellspacing=0 cellpadding=0 width=700></tr><td>
+		<h1>
+	Comment Tags
+</h1>
+
+<pre>!&gt;</pre>
+<p>Use the comment tag and comment sub-tags to make invisible notes in your code.</p>
+
+
+<h3>
+	Single line comment
+</h3>
+
+<pre>!&gt;<i>comment</i></pre>
+
+
+<h3>
+	Multi-line comment
+</h3>
+
+<pre>
+!&gt;
+	<i>comment</i>
+	<i>comment</i>
+	<i>comment</i>
+/&gt;</pre>
+
+
+<hr>
+
+
+<h2>
+	Sub-comment Tags
+</h2>
+<p>You can use the following list tags in your comments and swl will format them so that they look good when you're spying the innards of your HTML.  See the <a href="tag_list.html">list tags</a> page for more information on their coresponding formats.</p>
+
+<ul>
+	<li>#</li>
+	<li>*</li>
+	<li>A</li>
+	<li>a</li>
+</ul>
+
+
+<h3>
+	Example:
+</h3>
+
+<pre>
+!&gt;
+	<i>comment</i>
+	a&gt;
+		<i>comment</i>
+		<i>comment</i>
+	/&gt;
+/&gt;</pre>
+<p>will appear in your HTML as such:</p>
+
+<pre>
+&lt;!--
+	<i>comment</i>
+	a.)	<i>comment</i>
+	b.)	<i>comment</i>
+--&gt;</pre>
+
+
+<hr>
+
+
+<h2>
+	Mnemonic
+</h2>
+<p>SWL uses '!' to represent comments simply because it's the first character of a comment tag in HTML.  If you need aditional help remembering, '!' is the character you might write at the end of a 'comment'!</p>
+
+
+<hr>
+<p><a href="tag_comment.swl">tag_comment.swl</a></p>
+	</td></tr></table>
+</body>
+</html>

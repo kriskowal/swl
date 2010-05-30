@@ -1,0 +1,28 @@
+1>Exact HTML (Revert) Tag
+
+">:&gt;
+
+Allows you to revert to normal HTML formating (crossing over lines and all).
+
+3>Example:
+">
+	:&gt;
+		&lt;b&gt;this is really
+		interesting because
+		it's plain HTML.
+		joy.&lt;/b&gt;
+	/&gt;
+/>
+yields:
+t>
+	:>
+		<b>this is really
+		interesting because
+		it's plain HTML.
+		joy.</b>
+	/>
+/>
+
+->>
+
+< tag_revert.swl >

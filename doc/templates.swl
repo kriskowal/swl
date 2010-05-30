@@ -1,0 +1,26 @@
+
+1>Templates
+
+
+This is where most of the power of SWL is.  There will be a quiz.
+Templates...  Templates have 3 aspects:
+*>
+	the template, the framework for you HTML document, defined using '<i>=.template></i>'
+	template tag, for placement of values defined in your document, using '&lt;swl <i>your variable</i>&gt;'
+	template definition, using '<i>=.your variable</i>' in your document
+/>
+
+Look at the < local.swlt > and figure it out.  It's 4 a.m. and Kris needs to sleep.
+
+
+->>
+
+2>&lt;swl&gt; Tag Syntax
+
+3>&lt;swl value&gt; Notation
+3>&lt;swl /value&gt; Notation
+
+3>
+	&lt;swl value = new value&gt; and
+	&lt;swl /value = new value&gt; Notation
+/>

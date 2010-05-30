@@ -1,0 +1,62 @@
+1>Outline Tag
+
+">o&gt;
+
+The outline tag allows you to create large quatities of nested items simply by using tabs to differentiate the different heading levels.
+
+3>Example:
+">
+	o&gt;
+		item
+			sub-item
+			sub-item
+			sub-item
+		another item
+			sub-item
+			sub-item
+				another child
+					way out here
+			sub-item
+			sub-item
+	/&gt;
+/>
+yields:
+o>
+	item
+		sub-item
+		sub-item
+		sub-item
+	another item
+		sub-item
+		sub-item
+			another child
+				way out here
+		sub-item
+		sub-item
+/>
+
+->>
+
+1>Outline of Links Tag
+
+">ol&gt;
+
+Much like a list of links, you can have an outline of links.  This is useful when you want to create a Table of Contents.
+
+3>Example:
+j>here
+">
+	ol&gt;
+		tag_outline.html#here
+			tag_outline.html#here	You can put a label after a tab.
+	/&gt;
+/>
+yields:
+ol>
+	tag_outline.html#here
+		tag_outline.html#here	You can put a label after a tab.
+/>
+
+->>
+
+< tag_outline.swl >

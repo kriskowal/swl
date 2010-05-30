@@ -1,0 +1,22 @@
+1>Single Paragraph Tag
+
+">P&gt;
+
+This tag is handy if you don't want double spacing (poetry).  It creates a single paragraph and puts line-breaks between your lines.
+
+3>Example:
+">
+	P&gt;
+		How Now Brown Cow?
+		Green Eggs and Ham.
+	/&gt;
+/>
+yields:
+P>
+	How Now Brown Cow?
+	Green Eggs and Ham.
+/>
+
+->>
+
+< tag_paragraph.swl >

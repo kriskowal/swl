@@ -1,0 +1,70 @@
+
+1>Calendar Tag
+
+">
+	calendar&gt;
+	C&gt;
+/>
+
+The calendar tag allows you to arbitrarily place a calendar in your document.
+
+3>Example:
+">
+	calendar.2002.2&gt;&gt;
+/>
+yields:
+calendar.2002.2>>
+
+3>Example:
+">
+	calendar&gt;
+		@.calendar.date&gt;
+			height&gt;60px
+			valign&gt;top
+		/././&gt;
+		2002.2.11&gt;&gt;
+		2000.7.28&gt; SWL's Birthday
+		2002.2.13&gt; &lt; # "Some Event" &gt;
+	/&gt;
+/>
+yields:
+calendar>
+	@.calendar.date>
+		height>60px
+		valign>top
+	/././>
+	2002.2.11>>
+	2000.7.28> SWL's Birthday
+	2002.2.13> < # "Some Event" >
+/>
+
+->>
+
+2>Variables
+
+For information on how to use variables, see the < tag_variable.html "variable tag" > page.
+
+t>
+	h>Tag	Description
+	h>Basic Formating
+	calendar.table	the encompasing table
+	calendar.row	defaults for all tr's in calendars
+	calendar.cell	defaults for all td's in calendars
+	calendar.cellh	defaults for all th's in calendars
+	h>Specific Cells and Rows
+	calendar.month	month and year cell
+	calendar.month.row	month and year row
+	calendar.day	day of the week cells
+	calendar.day.row	day of the week rows
+	calendar.date	date cells
+	calendar.event	date cells that contain an event
+	calendar.date.row	date rows
+/>
+
+Note that each basic formatting tag inherits the values of the same variable less its calendar prefix.
+
+There are many acceptable, undocumented permutations for each of these variables.
+
+->>
+
+< tag_calendar.swl >

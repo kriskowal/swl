@@ -1,0 +1,154 @@
+<html>
+<!-- by SWL 2.10 Thu Sep 15 20:46:28 2005 -->
+<head>
+	<title>SWL Document</title>
+	<meta http-equiv=Expires content=0>
+	<style>
+		body
+		{
+			font-family: Verdana,Helvetica,Arial,Sans Serif;
+			font-size: 15px;
+			color: #000000;
+		}
+		p, tr, thred, tfoot, th, td, dl, ol, ul, blockquote, span, br
+		{
+			font-size: 15px;
+		}
+	</style>
+</head>
+<body>
+	<table border=0 cellspacing=0 cellpadding=0 width=700></tr><td>
+		<h1>
+	SWL Syntax
+</h1>
+<p>SWL is like HTML in that HTML tags can be put into a SWL document and will be preserved.  Unline HTML, SWL is in-line.  That is, in HTML, you can have a paragraph spanning multiple lines in your code.  In SWL, each line of code is assumed to be a unique, self-contained paragraph.  Using 'tags' at the beginning of a line, you can specify different formatting behavior for an individual line of code or a range of lines, using the following syntacies.</p>
+
+
+<h3>
+	Single Line of 'Tag' Formatting
+</h3>
+
+<pre>tag&gt;single line of content</pre>
+
+
+<h3>
+	Multiple Lines on which 'Tag' will operate.
+</h3>
+
+<pre>
+tag&gt;
+	content lines
+	content lines
+/&gt;</pre>
+<p>To see the various ways to you can format your code, refer to the <a href="tags.html">tag reference</a>.</p>
+
+
+<hr>
+
+
+<h1>
+	Nested Tags
+</h1>
+<p>By nesting tags, you can create outlines, break out rows in tables, and much more.  Here's the general idea:</p>
+<p>Through SWL's system of tag nesting, all of the following syntacies are functionally the same:</p>
+
+<pre>
+a&gt;
+	b&gt;
+		content
+	/&gt;
+/&gt;</pre>
+
+<pre>
+a&gt;
+	b&gt;content
+/&gt;</pre>
+
+<pre>a.b&gt;content</pre>
+<p>Note that there are 2 closing tags nested in this example.</p>
+
+<pre>
+a.b&gt;
+	content
+/./&gt;</pre>
+<p>So, this also works.</p>
+
+<pre>
+a.b&gt;
+		content
+	/&gt;
+/&gt;</pre>
+
+
+<hr>
+
+
+<h1>
+	Links and Images
+</h1>
+<p>By simply enclosing links or image file URL's in spaced angle-brackets, you can automatically create full image or anchor tags without the syntax hastle.  These tags can be placed anywhere in your code, not constrained to the beginning of the line.</p>
+<p><b>Note:</b> the space after the opening &lt; is required.  SWL will assume that any URL's containing the <i>@</i> (at) symbol are email links.  Images must end with <i>.gif</i>, <i>.jpg</i>, <i>.jpeg</i>, <i>.svg</i> or <i>.png</i>.  I have ambitions of adding support for other media extentions.</p>
+
+<pre>
+&lt; link link_text &gt;
+&lt; image alternate_text properties &gt;
+&lt; "link with spaces" "link text with spaces" &gt;
+&lt; "image file name" "alternate text" "properties with spaces" &gt;</pre>
+
+
+<h2>
+	Examples
+</h2>
+
+
+<h3>
+	Links:
+</h3>
+
+<pre>
+&lt; foo.html Foo &gt;
+&lt; bar.html "The Bar" &gt;
+&lt; "foo bar.html" foobar &gt;
+
+&lt; foo@bar.com &gt;
+&lt; foo@bar.com Foo &gt;
+&lt; foo@bar.com "Email Foo" &gt;</pre>
+
+
+<h3>
+	Images:
+</h3>
+
+<pre>
+&lt; bob.gif &gt;
+&lt; bob.jpg &gt;
+&lt; bob.jpeg &gt;
+
+&lt; bob.jpg "A picture of Bob" &gt;
+&lt; bob.jpg Bob &gt;
+&lt; bob.jpg "A picture of Bob" align=center &gt;
+&lt; bob.jpg "A picture of Bob" "align=center hspace=20 vspace=20" &gt;
+</pre>
+
+
+<h3>
+	Your Web Root
+</h3>
+<p>SWL makes your website portable.  You can specify in a single location where your entire document tree lies on the web.  This allows SWL to manage all of your links when you move your site.  All you have to do is change the <tt>root</tt> variable and forcibly recompile your entire site (which is only one command).</p>
+<p>To use this feature, specify your web root in your template (usually <tt>local.swlt</tt> or <tt>@.swlt</tt> in your document root) and use <tt>~/</tt> in all of your links to specify that your link is relative to your web root.  For example:</p>
+
+<pre>
+=.root&gt;//cixar.com/~swilly
+&lt; ~/index.html "Swilly's Homepage" &gt;</pre>
+
+
+<h3>
+	Mangle Your Email Addresses
+</h3>
+<p>SWL can mangle your site's email addresses to reduce the risk of web crawlers harvesting your email for unsolicited email, SPAM.  To activate this feature, specify the <tt>email-mangle</tt> variable in your site template and forcibly recompile your site with the command "<tt>swl -f .</tt>".</p>
+
+<pre>=.email-mangle&gt;yes</pre>
+<p><a href="syntax.swl">syntax.swl</a></p>
+	</td></tr></table>
+</body>
+</html>

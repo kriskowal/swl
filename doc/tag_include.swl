@@ -1,0 +1,41 @@
+1>Include File Tag
+
+">+&gt;
+
+The include tag compiles a <i>.swlt</i> SWL template or <i>.swl</i> SWL document into the current file.
+The file extention need not be specified.  Swl will search for the file name first in the local folder, then the SWL library folder, then the absolute directory.  It will try to match your file name with the <i>.swlt</i>, <i>.swl</i>, or <i>.txt</i> in respective order if not specified.
+
+3>Note:
+Text files are compiled just like SWL files are.  This allows for some nifty tricks:
+">".+&gt;<i>file</i>
+...will put the text file into your document under the < tag_pre.html preformatted > tag.
+">t.+&gt;<i>file</i>
+...will put a tab-delimitted text file into a table.
+
+3>Note:
+The nearest <i>local.swlt</i> file up the directory tree is automatically included in all SWL files.
+
+
+->>
+
+2>Include Other Formats
+
+You can include lines of plain text without SWL compilation or even tables of delimited data using '+' sub-tags.  SWL currently will import the following data formats other than swl:
+
+t>
+	h>sub-tag	description	assumed file extentions (in respective order)
+	txt	plain text files	txt
+	html	html files	html, htm, txt
+	csv	comma separated values	csv, txt
+	tab	tab delimited values	tab, txt
+/>
+
+3>Example:
+">
+	t.+.csv&gt;<i>filename</i>
+/>
+
+
+->>
+
+< tag_include.swl >

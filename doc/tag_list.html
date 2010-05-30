@@ -1,0 +1,147 @@
+<html>
+<!-- by SWL 2.10 Thu Sep 15 20:46:30 2005 -->
+<head>
+	<title>SWL Document</title>
+	<meta http-equiv=Expires content=0>
+	<style>
+		body
+		{
+			font-family: Verdana,Helvetica,Arial,Sans Serif;
+			font-size: 15px;
+			color: #000000;
+		}
+		p, tr, thred, tfoot, th, td, dl, ol, ul, blockquote, span, br
+		{
+			font-size: 15px;
+		}
+	</style>
+</head>
+<body>
+	<table border=0 cellspacing=0 cellpadding=0 width=700></tr><td>
+		<h1>
+	List Tags
+</h1>
+
+<p><table border="1" cellpadding="4" cellspacing="0">
+	<tr>
+		<td>
+			*&gt;
+		</td>
+		<td colspan=2>
+			bulleted list
+		</td>
+	</tr>
+	<tr>
+		<td>
+			#&gt;
+		</td>
+		<td colspan=2>
+			numbered list
+		</td>
+	</tr>
+	<tr>
+		<td>
+			a&gt;
+		</td>
+		<td colspan=2>
+			ordered lists
+		</td>
+	</tr>
+	<tr>
+		<td>
+			A&gt;
+		</td>
+		<td colspan=2>
+			&nbsp;
+		</td>
+	</tr>
+	<tr>
+		<td>
+			i&gt;
+		</td>
+		<td colspan=2>
+			&nbsp;
+		</td>
+	</tr>
+	<tr>
+		<td>
+			I&gt;
+		</td>
+		<td colspan=2>
+			&nbsp;
+		</td>
+	</tr>
+</table></p>
+<p>These tags produce the various ordered and unordered lists.</p>
+
+
+<h3>
+	Example:
+</h3>
+
+<pre>
+#&gt;
+	<i>item</i>
+	<i>item</i>
+	<i>item</i>
+/&gt;</pre>
+<p>yields:</p>
+
+<ol type=1>
+	<li><i>item</i></li>
+	<li><i>item</i></li>
+	<li><i>item</i></li>
+</ol>
+
+
+<h2>
+	Mnemonics
+</h2>
+<p>You'll notice that most of these lists start with their respective starting character.  Asterisk (<i>*</i>) is close enough to a bullet if you ask me.  Pound (<i>#</i>) marks numbered lists intuitively, but it isn't the first character of the list, like '<i>A</i>' and '<i>i</i>' are.  This is because '<i>1</i>' is used with '<i>1-6</i>' for headings.</p>
+<p><i>see also <a href="tag_outline.html">outlines</a>.</i></p>
+
+
+<hr>
+
+
+<h1>
+	Link List Tags
+</h1>
+
+<ul>
+	<li>l <i>(same as next)</i></li>
+	<li>*l</li>
+	<li>#l</li>
+	<li>al</li>
+	<li>Al</li>
+	<li>il</li>
+	<li>Il</li>
+</ul>
+<p>If you tack an '<i>l</i>' onto the end of the list tag (or just '<i>l</i>' for bulleted lists), you can create lists of links.  Lines with just a link on them serve as both the reference and the label.  If you want a label that's different than your reference, put a tab after the reference and write the name.  No quotes are necessary.</p>
+
+
+<h3>
+	Example:
+</h3>
+
+<pre>
+*l&gt;
+	tag_list.html#here
+	tag_list.html#here	Right Here
+/&gt;</pre>
+
+<a name=here></a>
+<p>yields:</p>
+
+<ul>
+	<li><a href="tag_list.html#here">tag_list.html#here</a></li>
+	<li><a href="tag_list.html#here">Right Here</a></li>
+</ul>
+<p><i>see also <a href="tag_outline.html">outlines</a>.</i></p>
+
+
+<hr>
+<p><a href="tag_list.swl">tag_list.swl</a></p>
+	</td></tr></table>
+</body>
+</html>

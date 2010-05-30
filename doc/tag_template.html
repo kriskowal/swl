@@ -1,0 +1,100 @@
+<html>
+<!-- by SWL 2.10 Thu Sep 15 20:46:33 2005 -->
+<head>
+	<title>SWL Document</title>
+	<meta http-equiv=Expires content=0>
+	<style>
+		body
+		{
+			font-family: Verdana,Helvetica,Arial,Sans Serif;
+			font-size: 15px;
+			color: #000000;
+		}
+		p, tr, thred, tfoot, th, td, dl, ol, ul, blockquote, span, br
+		{
+			font-size: 15px;
+		}
+	</style>
+</head>
+<body>
+	<table border=0 cellspacing=0 cellpadding=0 width=700></tr><td>
+		<h1>
+	Template Variable Define Tag
+</h1>
+
+<pre>=&gt;</pre>
+<p>The template variable define tag allows you to set 'variables' whose values will be pasted into your docuement's template.  <i>(More on creating your own template later)</i></p>
+
+
+<h3>
+	Example:
+</h3>
+
+<pre>=.author&gt;<i>your_name</i></pre>
+<p>To place a template value in your document, you use the pseudo-HTML tag, '<i>&lt;swl&gt;</i>'</p>
+
+
+<h3>
+	Example:
+</h3>
+
+<pre>&lt;swl author&gt;</pre>
+<p>yields: <i>your_name</i>.</p>
+
+
+<h2>
+	Builtin Templates
+</h2>
+<p>The SWL compiler automatically sets these templates so that you can insert them into your document:</p>
+
+<p><table border="1" cellpadding="4" cellspacing="0">
+	<tr>
+		<td>
+			date
+		</td>
+		<td colspan=2>
+			date of compilation
+		</td>
+	</tr>
+	<tr>
+		<td>
+			author
+		</td>
+		<td colspan=2>
+			the default author is "SWL <i>version</i>"
+		</td>
+	</tr>
+	<tr>
+		<td>
+			body
+		</td>
+		<td colspan=2>
+			if you define a 'template' variable, the content of your document will be dumped into the 'body' template so you can place it wherever you want it.
+		</td>
+	</tr>
+</table></p>
+
+
+<hr>
+
+
+<h2>
+	<i>about.swlt</i> Templates
+</h2>
+<p>If you put the line '<i>+&gt;about</i>' on the top of your document, these template variables are set:</p>
+
+<ul>
+	<li>swl.author</li>
+	<li>swl.version</li>
+	<li>swl.release date</li>
+	<li>swl.copyright</li>
+	<li>swl.license</li>
+</ul>
+<p>Note that when you compile a SWL document, SWL tries to find <i>local.swlt</i> in the same directory as your source code or one of the parent directories.  Thusly, you can port generic SWL files from one site to another, recompile, and completely change the look of your pages.</p>
+
+
+<hr>
+<p><a href="tag_template.swl">tag_template.swl</a> | <a href="local.swlt">local.swlt</a></p>
+	</td></tr></table>
+</body>
+</html>

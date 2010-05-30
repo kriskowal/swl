@@ -1,0 +1,80 @@
+
+1>SWL Builtin Tag Reference
+
+t>
+
+	@.table.width>100%
+	
+	h>tag	html	description
+	
+	:	html	just plain html	< tag_revert.html goto >
+	p	p	multiple paragraphs	< tag_paragraphs.html goto >
+	P	p br	single paragraph, delimiting each space with a br	< tag_paragraph.html goto >
+	j	a name	anchor	< tag_anchor.html goto >
+	"	pre	pre-formatted text	< tag_pre.html goto >
+	-	hr	horizontal rule	< tag_rule.html goto >
+	
+	h>Headings
+	
+	1	h1	heading level 1	< tag_heading.html goto >
+	2	h2	heading level 2
+	3	h3	heading level 3
+	4	h4	heading level 4
+	5	h5	heading level 5
+	6	h6	heading level 6
+	
+	h>Lists
+	
+	*	ul	bulleted list	< tag_list.html goto >
+	#	ol type=1	numbered list
+	a	ol type=a	ordered list starting with 'a'
+	A	ol type=A	ordered list starting with 'A'
+	i	ol type=i	ordered list starting with 'i'
+	I	ol type=I	ordered list starting with 'I'
+	o	ol ul	ouline	< tag_outline.html goto >
+	
+	h>Link Lists
+	
+	l	ul a	bulleted list of links	< tag_list.html goto >
+	*l	ul a	bulleted list of links
+	#l	ol type=1 a	numbered list of links
+	al	ol type=a a	ordered list of links starting with 'a'
+	Al	ol type=A a	ordered list of links starting with 'A'
+	il	ol type=i a	ordered list of links starting with 'i'
+	Il	ol type=I a	ordered list of links starting with 'I'
+	ol	ol ul a	outline of links	< tag_outline.html goto >
+	
+	h>Tables
+	
+	t	table	table (lines=rows) (columns=tab delimited)	< tag_table.html goto >
+	t.h	tr th	rows of header cells in a table (lines=row) (columns=tab delimited)
+	t.r	tr td	row of normal cells in a table (lines=cells)
+	t.rh	tr th	row of header cells (line delimited)
+	t.r.c	td	lines of a normal cell in a row of a table
+	t.r.ch	th	lines of a header cell in a normal row of a table
+	t.r.h	tr th	lines of a header cell in a normal row of a table
+	t.rh.c	td	lines of a normal cell in a header row of a table
+	t.rh.ch	th	lines of a header cell in a header row of a table
+	
+	h>Calendar
+	C	table	creates a calendar in table form for the specified dates	< tag_calendar.html goto >
+
+	h>Comments
+	
+	!	!--	comment	< tag_comment.html goto >
+	!.#	!--	numbered list in a comment
+	!.*	!--	bulleted list in a comment
+	!.A	!--	ordered list in a comment starting with 'A'
+	!.a	!--	ordered list in a comment starting with 'a'
+
+	h>Manipulators
+
+	@	.	variables	< tag_variable.html goto >
+	^	.	macro definition	< tag_macro.html goto >
+	=	swl	template replacement	< tag_template.html goto >
+	+	.	file include	< tag_include.html goto >
+
+	
+/>
+
+< tags.swl >
